@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mission 4</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h2> Mission 4 </h2>
+            <div class="to-do">
+                <img src="images/icon.png" class="icon">
+                to-do list
+            </div>
+        </header>
+        <div class="content">
+            <div class="frame-1">
+                <div class="row">
+                    <input type="text" class="input-tambah" id="input-box" placeholder="Tambahkan Tugas">
+                    <select name="" id="select-prioritas">
+                        <option value="" disabled selected>Prioritas</option>
+                        <option value="tinggi" class="tinggi">tinggi</option>
+                        <option value="sedang">sedang</option>
+                        <option value="rendah">rendah</option>
+                    </select>
+                    <button type="submit" class="submit-tambah" onclick="tambahkan()"> Tambahkan </button>
+                </div>
+            </div>
+            <div class="frame-2">
+                <div class="frame-21">
+                    <div class="nama-tugas-head">Nama Tugas</div>
+                    <div class="tenggat">Waktu</div>
+                    <div class="prioritas">Prioritas</div>
+                    <div class="kosong">
+                        <button class="hapus-semua" id="hapus-semua">
+                            <img class="vector" src="images/icons8-delete-30.png">
+                            Hapus semua
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="frame-3">
+                <h3>Tugas</h3>
+            </div>
+            <div class="frame-4" id="list-container">
+            </div>
+            <div class="frame-5">
+                <h3>Tugas Selesai</h3>
+            </div>
+            <div class="frame-6" id="after-list">
+
+            </div>
+        </div>
+
+        <script src="javascript/script.js"></script>
+</body>
+
+</html>
